@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cncfport
+spec:
+  ports:
+    - port: 10000
+      targetPort: cncfdemoport
+      nodePort: 30000
+  selector:
+    app: bbc
+  type: NodePort

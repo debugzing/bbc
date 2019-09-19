@@ -1,0 +1,35 @@
+[{
+        "id": 1,
+        "name": "Ferrari",
+        "type": "cars",
+        "image": "ferrari.jpg",
+        "title": "Ferrari Model Red",
+        "model": "Testarossa",
+        "price": 1000000,
+        "stockcount": 10,
+        "currency": "USD",
+        "description": "Still dreaming of being Don Johnson, this is the car for you"
+    },
+    {
+        "id": 2,
+        "name": "Lambroghini",
+        "type": "cars",
+        "image": "lambo.jpg",
+        "title": "Lambo Galadaro",
+        "model": "Galadaro",
+        "price": 2000000,
+        "currency": "USD",
+        "description": "Our latest Lambo, for the hippest hoppest bad boys"
+    },
+    {
+        "id": 3,
+        "name": "Tesla",
+        "type": "cars",
+        "image": "tesla.jpg",
+        "title": "Model S",
+        "model": "S",
+        "price": 120000,
+        "currency": "USD",
+        "description": "When the wife says no. For the family man. Be sensible and still beat the supercars"
+    }
+]

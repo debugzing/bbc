@@ -1,0 +1,87 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CNCF Demo</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a xhref="#" ui-sref="landing.home" translate>HOME</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" translate>PRODUCTS
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a ui-sref="landing.home({item: main.itemcat[0]})" translate>ITEM_0</a></li>
+
+<!-- XXXXXX:  Remove this line to add the second item and push the change to git
+
+          <li><a ui-sref="landing.home({item: main.itemcat[1]})" translate>ITEM_1</a></li>
+
+<!-- -->
+
+<!-- XXXXXX:  Remove this line to add the third item and push the change to git
+
+          <li><a ui-sref="landing.home({item: main.itemcat[2]})" translate>ITEM_2</a></li>
+
+<!-- -->
+          <li><a ui-sref="landing.home({item: null})" translate>ALL_STOCK</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#" ui-sref="landing.cart"><span class="fas fa-shopping-cart"></span>
+          <span class="label label-primary m-l-sm">{{main.cartcount()}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div ng-if="main.message.txt" class="alert alert-dismissible {{main.message.class}}">
+  {{main.message.txt}}
+</div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div ng-repeat="item in main.items|limitTo:3" class="item" ng-class="{'active':$index == 0}">
+      <img ng-src="/img/{{item.image}}" alt="{{item.name}}">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only" translate>PREVIOUS</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only" translate>NEXT</span>
+  </a>
+
+  <div class="tagline">
+    <h1 translate>TITLE</h1>
+    <h2 class="label label-success" translate>CAPTION</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="m-t-lg"></div>
+  <div ui-view></div>
+  <div class="m-b-lg"></div>
+</div>
+
+<div class="container m-t-lg">
+  <div class="row footer">
+    &copy; 2019 - mitch.dsouza@oracle.com for microservices demos use only.
+  </div>
+</div>

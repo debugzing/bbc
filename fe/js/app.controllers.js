@@ -1,0 +1,7 @@
+angular.module('cncfdemo')
+    .controller('mainCtrl', mainCtrl)
+    .controller('landingCtrl', landingCtrl)
+    .controller('detailCtrl', detailCtrl)
+    .controller('cartCtrl', cartCtrl)
+    .controller('adminCtrl', adminCtrl)
+    .controller('salesCtrl', salesCtrl)

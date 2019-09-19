@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <!-- Page title set in pageTitle directive -->
+  <title page-title></title>
+
+  <link href="dist/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/animate.min.css" rel="stylesheet">
+  <link href="dist/fontawesome.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" id="loadBefore">
+
+</head>
+
+<body ng-app="cncfdemo" ng-controller="mainCtrl as main" id="page-top">
+
+  <!-- Main view  -->
+  <div ui-view class="uiv"></div>
+
+  <!-- jQuery and Bootstrap -->
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/bootstrap.min.js"></script>
+
+  <!-- Main Angular scripts-->
+  <script src="dist/angular.js"></script>
+  <script src="dist/angular-animate.min.js"></script>
+  <script src="dist/angular-messages.min.js"></script>
+  <script src="dist/angular-sanitize.min.js"></script>
+  <script src="dist/angular-cookies.min.js"></script>
+  <script src="dist/angular-translate.min.js"></script>
+  <script src="dist/angular-translate-loader-static-files.min.js"></script>
+  <script src="dist/angular-ui-router.min.js"></script>
+  <script src="dist/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="dist/lodash.min.js"></script>
+  <script src="dist/moment.min.js"></script>
+
+  <script src="js/app.module.js"></script>
+  <script src="js/app.config.js"></script>
+  <script src="js/app.controllers.main.js"></script>
+  <script src="js/app.controllers.landing.js"></script>
+  <script src="js/app.controllers.cart.js"></script>
+  <script src="js/app.controllers.detail.js"></script>
+  <script src="js/app.controllers.admin.js"></script>
+  <script src="js/app.controllers.sales.js"></script>  
+  <script src="js/app.controllers.js"></script>
+  <script src="js/app.services.api.js"></script>
+  <script src="js/app.services.data.js"></script>
+  <script src="js/app.services.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row text-center m-b">
+    <h4 translate>TAGLINE</h4>
+    <h5 ng-if="vm.state.params.item">{{'CURRENT_STOCK_OF'|translate:vm.itemtype}}</h5>
+    <h5 ng-if="!vm.state.params.item" translate>CURRENT_STOCK_ALL</h5>
+  </div>
+
+  <div class="row">
+    <div ng-if="vm.items.length" ng-repeat="item in vm.items">
+      <div class="col-xs-4" ng-if="vm.state.params.item == null || item.type == vm.state.params.item">
+        <div class="card">
+          <img src="img/{{item.image}}" width="100%" class="img img-responsive">
+          <div class="col-xs-12 content m-b">
+            <div class="item-name m-t-lg">{{item.name}}</div>
+            <div class="m-b"><span translate>MODEL</span>: {{item.model}}</div>
+            <div class="m-b"><span translate>DESC</span>: {{item.description}}</div>
+            <div class="m-b"><span translate>PRICE</span>: {{item.price|currency:" "+item.currency+" ":0}}</div>
+            <div class="m-b"><span translate>STOCKCOUNT</span>: {{item.stockcount}}</div>
+            <div class="m-b pull-right btn-bottom">
+              <button class="btn btn-primary" ng-click="vm.addtocart(item)" ng-if="item.stockcount" translate>ADD_TO_CART</button>
+              <button class="btn btn-danger disabled" ng-if="!item.stockcount" translate>OUT_OF_STOCK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

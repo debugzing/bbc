@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-xs-12 m-b">
+      <h2>Admin actions</h2>
+    </div>
+
+
+    <div class="col-xs-12 m-b">
+      <span class="h5">Remove all stock items (delete all)</span>
+      <button class="btn btn-danger btn-sm m-l" ng-click="vm.deleteall()">Delete all</button>
+    </div>
+
+    <div class="col-xs-12 m-b">
+      <span class="h5">Clear carts</span>
+      <button class="btn btn-primary btn-sm m-l" ng-click="vm.clearcarts()">Clear all carts</button>
+    </div>
+
+    <div class="col-xs-12 m-b">
+      <span class="h5">Random restock</span>
+      <button class="btn btn-primary btn-sm m-l" ng-click="vm.restock()">Restock</button>
+    </div>
+
+    <div class="col-xs-5">
+      <div class="input-group" style="width: 200px" >
+        <input type="text" class="form-control" placeholder="Restock count" ng-model="count">
+        <div class="input-group-btn">
+          <button class="btn btn-primary " ng-click="vm.restock(count)" type="button">Restock</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

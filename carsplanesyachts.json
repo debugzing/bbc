@@ -1,0 +1,90 @@
+[{
+        "id": 1,
+        "name": "Ferrari",
+        "type": "cars",
+        "image": "ferrari.jpg",
+        "title": "Ferrari Model Red",
+        "model": "Testarossa",
+        "price": 1000000,
+        "stockcount": 10,
+        "currency": "USD",
+        "description": "Still dreaming of being Don Johnson, this is the car for you"
+    },
+    {
+        "id": 2,
+        "name": "Lambroghini",
+        "type": "cars",
+        "image": "lambo.jpg",
+        "title": "Lambo Galadaro",
+        "model": "Galadaro",
+        "price": 2000000,
+        "currency": "USD",
+        "description": "Our latest Lambo, for the hippest hoppest bad boys"
+    },
+    {
+        "id": 3,
+        "name": "Tesla",
+        "type": "cars",
+        "image": "tesla.jpg",
+        "title": "Model S",
+        "model": "S",
+        "price": 120000,
+        "currency": "USD",
+        "description": "For the family man with wife and kids. Be sensible and still beat the supercars"
+    },
+    {
+        "id": 4,
+        "name": "Learjet",
+        "type": "planes",
+        "image": "learjet.jpg",
+        "title": "Model 55",
+        "model": "55",
+        "price": 5900000,
+        "currency": "USD",
+        "description": "Family sized jet with long range. Seats 6 passengers. The best you can get !"
+    },
+    {
+        "id": 5,
+        "name": "Bombadier",
+        "type": "planes",
+        "image": "bombadier.jpg",
+        "title": "Model X",
+        "model": "X",
+        "price": 9900000,
+        "currency": "USD",
+        "description": "Tried and trusted jet with perfect safety record. Seats 9 passengers. Luxury adn refinement redefined !"
+    },
+    {
+        "id": 6,
+        "name": "Gulfstream",
+        "type": "planes",
+        "image": "gulfstream.png",
+        "title": "G8",
+        "model": "8",
+        "price": 5200000,
+        "currency": "USD",
+        "description": "Budget priced jet with fantastic range. Go further faster. Seats 8"
+    },
+    {
+        "id": 7,
+        "name": "Nauta Superyacht",
+        "type": "yachts",
+        "image": "nauta.jpg",
+        "title": "S9",
+        "model": "S9",
+        "price": 55200000,
+        "currency": "USD",
+        "description": "Nauta, the floating home. Fully equipped with 8 duplex room, 24 additional cabins, olympic size swimming pool, 500 seat IMAX cinema, tennis court, and much more. Bespoke builds to your exquisite taste."
+    },
+    {
+        "id": 8,
+        "name": "Trimaran Cat",
+        "type": "yachts",
+        "image": "trimaran-yacht-17.jpg",
+        "title": "Cat 7",
+        "model": "C77",
+        "price": 89200000,
+        "currency": "USD",
+        "description": "Trimaran Cat. Beautifullly designed superyacht. Smooth and quiet luxury. Unassuming luxury with no holds barred. High specced leather throughout, 24k gold trimming in master bathroom, diamond studded headboards and super plush fittings. Must be seen."
+    }
+]

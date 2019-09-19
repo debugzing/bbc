@@ -1,0 +1,14 @@
+<div class="modal-content modal-block">
+  <div class="modal-header">
+    <h2><i class="fa fa-question-circle m-r"></i><span translate>ARE_YOU_SURE</span></h2>
+  </div>
+
+  <div class="modal-body">
+    <p ng-bind-html="$ctrl.message"></p>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-sm btn-danger" ng-if="$ctrl.showconfirm" ng-click="$close()" translate>CANCEL</button>
+    <button class="btn btn-sm btn-primary" ng-click="$close('ok')" translate>CONFIRM</button>
+  </div>
+</div>

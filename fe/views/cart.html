@@ -1,0 +1,48 @@
+<div class="container text-center" ng-if="!vm.cart.length">
+  <h3 translate>EMPTY_CART</h3>
+  <a ui-sref="landing.home" class="btn btn-primary" translate>HOME</a>
+</div>
+
+<div class="container" ng-if="vm.cart.length">
+  <div class="row text-center m-b">
+    <h4 translate>CART_MESSAGE</h4>
+    <h5 ng-if="vm.cart.length > 1">{{'CART_MULTI_ITEM'|translate:vm.count}}</h5>
+    <h5 ng-if="vm.cart.length == 1" translate>CART_ONE_ITEM</h5>
+  </div>
+
+  <div class="row">
+    <div ng-repeat="item in vm.cart">
+      <div class="col-xs-12 item-desc">
+        <span class="label label-primary">{{1+$index}}</span>
+        <span class="" style="padding-top: 10px">{{item.item.name}}, {{item.item.model}}</span>
+        <span class="pull-right">
+
+          <span class="" ng-if="item.count>1">{{item.count}} x </span><span class="">{{item.item.price|currency:" "+item.currency+" ":0}}</span>
+          <span class="m-r"></span>
+          <button ng-click="vm.addtocart(item.item)" class="btn btn-xs btn-info"><span class="fas fa-plus"></span></button>
+          <button ng-click="vm.removefromcart(item.item)" class="btn btn-xs btn-info"><span class="fas fa-minus"></span></button>
+          <!--
+          <button ng-click="vm.removefromcart(item)" class="btn btn-xs btn-info" ng-click="vm.removefromcart(item)">
+            <span class="fas fa-trash"></span>
+          </button>
+          -->
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3><span translate>TOTAL</span>:
+        <span class="pull-right">{{vm.sum()|currency:" $":0}}</span>
+      </h3>
+    </div>
+  </div>
+
+  <div class="row" ng-if="vm.cart.length">
+    <div class="col-xs-12">
+      <button class="btn btn-success pull-right m-l" ng-click="vm.pay()" translate>PAY_NOW</button>
+      <button class="btn btn-danger pull-right" ng-click="vm.clearcart()" translate>CLEAR_CART</button>
+    </div>
+  </div>
+</div>
